@@ -1,0 +1,27 @@
+{
+  "function": {
+    "S3Trigger332680be": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_S3Trigger332680be_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger332680be"
+        }
+      ]
+    },
+    "AMPLIFY_function_S3Trigger332680be_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger332680be"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "amplify-repro",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "amplify:S3Trigger332680be": "cd amplify/backend/function/S3Trigger332680be/lib && mv lib/ ../src/ && mv bin/ ../src && echo 'moved dirs to src' && cd -",
+    "build": "mkdir -p dist && cp index.html dist/"
+  },
+  "dependencies": {}
+}
