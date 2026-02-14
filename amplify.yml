@@ -1,4 +1,8 @@
 version: 1
+env:
+  variables:
+    VERSION_NODE_SALESMAPS: 20.15.0
+
 backend:
   phases:
     preBuild:
@@ -9,13 +13,17 @@ backend:
           fi
     build:
       commands:
+        - nvm install $VERSION_NODE_SALESMAPS
+        - nvm use $VERSION_NODE_SALESMAPS
         - amplifyPush --simple
 
 frontend:
   phases:
     preBuild:
       commands:
-        - echo "frontend preBuild"
+        - nvm install $VERSION_NODE_SALESMAPS
+        - nvm use $VERSION_NODE_SALESMAPS
+        - npm ci
     build:
       commands:
         - npm run build
