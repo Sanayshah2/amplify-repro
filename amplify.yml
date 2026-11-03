@@ -13,6 +13,7 @@ backend:
           fi
     build:
       commands:
+        - nvm use 26
         - nvm install $VERSION_NODE_SALESMAPS
         - nvm use $VERSION_NODE_SALESMAPS
         - amplifyPush --simple
